@@ -13,7 +13,7 @@ const Payment = () => {
     const order = await orderRes.json();
 
     const options = {
-      key: "rzp_live_SFFl0VBXMPD0SQ",
+      key: process.env.REACT_APP_RAZORPAY_KEY,
       amount: order.amount,
       currency: order.currency,
       name: "NotesKart",
