@@ -69,7 +69,7 @@ const Dashboard = () => {
         ) : (
           <>
             <p className="text-green-600 mb-4">
-              ✅ Notes Unlocked!
+              ✅ Notes Unlocked and go to home page for downloading the notes!
             </p>
             <div className="bg-gray-100 p-4 rounded">
               All semesters notes available here.
