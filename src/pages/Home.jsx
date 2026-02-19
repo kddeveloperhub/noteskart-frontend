@@ -9,10 +9,9 @@ import { useNavigate } from "react-router-dom";
 ========================= */
 
 const fileMap = {
-  "Relational Database Management systems (RDBMS)": "RDBMS.pdf",
-  "Computer Networks": "Computer Networks.pdf",
-  "Computer oriented numerical and stastical methods": "CONM.pdf",
-
+  "Relational Database Management systems (RDBMS)": "DBMS.pdf",
+  "Computer Networks": "Computer Network.pdf",
+  "System Analysis and Design": "System Analysis.pdf",
   "Java programming": "Java.pdf",
   "Software Engineering": "Software Engineering.pdf",
   "Operating System": "Operating System.pdf",
@@ -174,18 +173,13 @@ ${filename}/${user.uid}`;
               {sem.semester}
             </h2>
 
-            {sem.semester === "Semester 4" && (
-              <p className="text-sm text-red-500 mb-4">
-                ⚠️ We are working with 4th semester notes.
-              </p>
-            )}
+           
 
             {sem.semester === "Semester 5" && (
               <p className="text-sm text-red-500 mb-4">
                 ⚠️ We are working with notes for:
                 <br />• Web Development using Asp.Net
-                <br />• System Analysis and Design
-              </p>
+                 </p>
             )}
 
             <div className="space-y-3">
